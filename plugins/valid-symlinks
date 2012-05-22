@@ -1,0 +1,5 @@
+elasticsearch_cache
+elasticsearch_docs
+elasticsearch_index_size
+elasticsearch_jvm_memory
+elasticsearch_jvm_threads

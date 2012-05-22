@@ -47,8 +47,8 @@ my %plugins = (
         },
     },
     'elasticsearch_jvm_memory' => {
-        'path_all' => '/_cluster/nodes',
-        'path' => '/_cluster/nodes/_local',
+        'path_all' => '/_cluster/nodes?jvm=true',
+        'path' => '/_cluster/nodes/_local?jvm=true',
         'graph' => {
             'graph_title' => 'ElasticSearch jvm memory',
         },
@@ -59,8 +59,8 @@ my %plugins = (
         },
     },
     'elasticsearch_jvm_threads' => {
-        'path_all' => '/_cluster/nodes/stats',
-        'path' => '/_cluster/nodes/_local/stats',
+        'path_all' => '/_cluster/nodes/stats?jvm=true',
+        'path' => '/_cluster/nodes/_local/stats?jvm=true',
         'graph' => {
             'graph_args' => '--base 1000',
             'graph_title' => 'ElasticSearch jvm threads',
